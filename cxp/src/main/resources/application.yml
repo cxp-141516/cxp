@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cxp?characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations:
+   classpath: mapper/*Mapper.xml
+  type-aliases-package: com.cxp.bean
